@@ -17,23 +17,26 @@ export function Header({ onCartClick }: HeaderProps) {
   return (
     <header className="app-header">
       <div className="app-header__inner">
-        <Link to="/" className="logo">
+        <Link to="/" className="logo" data-testid="logo">
           <span className="logo__title">Cat Pizza</span>
           <span className="logo__subtitle">Доставка котиков на дом</span>
         </Link>
 
         <nav className="nav">
           <NavLink
+            data-testid="mainTab"
             to="/"
             className={({ isActive }) => (isActive ? 'nav__link nav__link--active' : 'nav__link')}>
             Главная
           </NavLink>
           <NavLink
+            data-testid="myOrdersTab"
             to="/orders"
             className={({ isActive }) => (isActive ? 'nav__link nav__link--active' : 'nav__link')}>
             Мои заказы
           </NavLink>
           <button
+            data-testid="cartTab"
             type="button"
             className={
               itemsCount > 0 ? 'nav__cart-button nav__cart-button--active' : 'nav__cart-button'
@@ -48,6 +51,7 @@ export function Header({ onCartClick }: HeaderProps) {
             <button
               type="button"
               className="auth__link"
+              data-testid="signOutButton"
               onClick={logout}
               style={{ background: 'none', border: 'none', padding: 0 }}>
               Выйти
@@ -56,6 +60,7 @@ export function Header({ onCartClick }: HeaderProps) {
             <button
               type="button"
               className="auth__link"
+              data-testid="signInButton"
               onClick={() => openAuthModal()}
               style={{ background: 'none', border: 'none', padding: 0 }}>
               Войти
