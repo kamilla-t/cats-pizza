@@ -145,6 +145,7 @@ export function AuthModal({ isOpen, onClose, onAuthSuccess }: AuthModalProps) {
         </button>
         <button
           type="button"
+          data-testid="registerButton"
           onClick={() => switchMode('register')}
           disabled={mode === 'register'}
           className={`page-tabs__button ${mode === 'register' ? 'page-tabs__button--active' : ''}`}>
@@ -157,7 +158,7 @@ export function AuthModal({ isOpen, onClose, onAuthSuccess }: AuthModalProps) {
           <div className="page-card__field">
             <label>
               <span>Имя:</span>
-              <input value={name} onChange={(e) => setName(e.target.value)} />
+              <input data-testid="nameInput" value={name} onChange={(e) => setName(e.target.value)} />
             </label>
           </div>
         )}
@@ -165,14 +166,14 @@ export function AuthModal({ isOpen, onClose, onAuthSuccess }: AuthModalProps) {
         <div className="page-card__field">
           <label>
             <span>Email:</span>
-            <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+            <input data-testid="emailInput" type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
           </label>
         </div>
 
         <div className="page-card__field">
           <label>
             <span>Пароль:</span>
-            <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+            <input data-testid="passwordInput" type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
           </label>
         </div>
 
@@ -180,7 +181,7 @@ export function AuthModal({ isOpen, onClose, onAuthSuccess }: AuthModalProps) {
           <div className="page-card__field">
             <label>
               <span>Повторите пароль:</span>
-              <input type="password" value={confirm} onChange={(e) => setConfirm(e.target.value)} />
+              <input data-testid="rePasswordInput" type="password" value={confirm} onChange={(e) => setConfirm(e.target.value)} />
             </label>
           </div>
         )}
@@ -188,7 +189,7 @@ export function AuthModal({ isOpen, onClose, onAuthSuccess }: AuthModalProps) {
         {error && <p className="page-card__error">{error}</p>}
         {message && <p className="page-card__success">{message}</p>}
 
-        <button type="submit" className="page-card__submit" disabled={isSubmitting}>
+        <button type="submit" className="page-card__submit" data-testid="signInBtn" disabled={isSubmitting}>
           {mode === 'login' ? 'Войти' : 'Зарегистрироваться'}
         </button>
       </form>
