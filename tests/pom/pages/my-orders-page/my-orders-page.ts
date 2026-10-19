@@ -1,4 +1,4 @@
-import { Locator, Page } from '@playwright/test';
+import { expect, Locator, Page } from '@playwright/test';
 
 export class MyOrdersPage {
   readonly page: Page;
@@ -13,5 +13,8 @@ export class MyOrdersPage {
   }
   get orderDetailsItem(): Locator {
     return this.page.getByTestId('');
+  }
+  async checkHasOrder() {
+    await expect(this.ordersList.getByRole('listitem').first()).toBeVisible();
   }
 }

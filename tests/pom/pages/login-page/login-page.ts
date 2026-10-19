@@ -1,9 +1,12 @@
-import type { Locator, Page } from '@playwright/test';
+import { expect, type Locator, type Page } from '@playwright/test';
+import { MainApp } from '../main-app';
 
 export class LoginPage {
   readonly page: Page;
+  readonly mainApp: MainApp;
   constructor(page: Page) {
     this.page = page;
+    this.mainApp = new MainApp(this.page);
   }
 
   get emailInput(): Locator {
@@ -19,5 +22,8 @@ export class LoginPage {
     await this.emailInput.fill(email);
     await this.passwordInput.fill(password);
     await this.loginBtn.click();
+  }
+  async assertSignedIn() {
+    await expect(this.mainApp.navigationBar.logOutBtn).toBeVisible();
   }
 }

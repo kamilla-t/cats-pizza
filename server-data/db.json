@@ -70,9 +70,47 @@
       "name": "Test User",
       "email": "test@test.ru",
       "password": "Qwerty"
+    },
+    {
+      "id": "user-2",
+      "name": "Al",
+      "email": "B@test.ru",
+      "password": "123"
     }
   ],
-  "orders": [],
+  "orders": [
+    {
+      "id": "order-1",
+      "ownerType": "user",
+      "ownerId": "user-2",
+      "userId": "user-2",
+      "guestSessionId": null,
+      "items": [
+        {
+          "id": "cat-1",
+          "name": "Маргарита",
+          "basePrice": 3500,
+          "price": 3500,
+          "options": {
+            "furType": "Средняя",
+            "activityLevel": "Игровой",
+            "extras": []
+          },
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 3500,
+      "customer": {
+        "city": "K",
+        "street": "1",
+        "house": "1",
+        "apartment": "1",
+        "comment": "1",
+        "payment": "card"
+      },
+      "createdAt": "2026-10-19T01:36:09.870Z"
+    }
+  ],
   "sessions": [
     {
       "token": "token-8bc3a016-bd5d-4ea2-afb5-8b9bd04b5eb3",
@@ -118,6 +156,11 @@
       "token": "token-52bae323-77ec-492a-9a18-586436292241",
       "userId": "user-1",
       "createdAt": "2026-10-15T22:33:53.390Z"
+    },
+    {
+      "token": "token-48aa2ad1-b3fc-4a84-af3d-2addfb33d6f3",
+      "userId": "user-2",
+      "createdAt": "2026-10-19T01:35:51.560Z"
     }
   ],
   "carts": [
@@ -149,6 +192,16 @@
     {
       "ownerType": "guest",
       "ownerId": "guest-199d0659-b243-4678-982f-a4a2b9ec6cac",
+      "items": []
+    },
+    {
+      "ownerType": "guest",
+      "ownerId": "guest-4a4ec4b9-5ab4-44a7-b9cd-88e6eae8b0e3",
+      "items": []
+    },
+    {
+      "ownerType": "user",
+      "ownerId": "user-2",
       "items": []
     }
   ]

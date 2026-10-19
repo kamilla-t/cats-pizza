@@ -24,4 +24,20 @@ export class NavigationBar {
   get logOutBtn(): Locator {
     return this.page.getByTestId('signOutButton');
   }
+
+  async openMainPage() {
+    await this.page.goto('/');
+  }
+  async openMyOrdersPage() {
+    await this.myOrdersTab.click();
+  }
+  async openCartPage() {
+    await this.cartTab.click();
+  }
+  async openLoginPage() {
+    await this.loginBtn.click();
+  }
+  async logOut() {
+    await this.logOutBtn.click();
+  }
 }

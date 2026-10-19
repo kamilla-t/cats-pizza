@@ -1,4 +1,4 @@
-import { Locator, Page } from '@playwright/test';
+import { expect, Locator, Page } from '@playwright/test';
 
 export class OrderConfirmedModal {
   readonly page: Page;
@@ -10,5 +10,10 @@ export class OrderConfirmedModal {
   }
   get closeBtn(): Locator {
     return this.page.getByTestId('closeBtn');
+  }
+
+  async verifyAndCloseOrderConfirmedModal() {
+    await expect(this.modalTitle).toHaveText('Заказ оформлен');
+    await this.closeBtn.click();
   }
 }

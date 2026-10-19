@@ -31,18 +31,18 @@ export class DeliveryModal {
     return this.page.getByRole('button', { name: 'Подтвердить заказ' });
   }
 
-  async fillDeliveryForm(
-    city: string,
-    street: string,
-    building: string,
-    apartment: string,
-    comment: string,
-  ) {
-    await this.cityField.fill(city);
-    await this.streetField.fill(street);
-    await this.buildingField.fill(building);
-    await this.apartmentField.fill(apartment);
-    await this.commentField.fill(comment);
+  async fillDeliveryForm(address: {
+    city: string;
+    street: string;
+    building: string;
+    apartment: string;
+    comment: string;
+  }) {
+    await this.cityField.fill(address.city);
+    await this.streetField.fill(address.street);
+    await this.buildingField.fill(address.building);
+    await this.apartmentField.fill(address.apartment);
+    await this.commentField.fill(address.comment);
     await this.confirmOrderButton.click();
   }
 }
