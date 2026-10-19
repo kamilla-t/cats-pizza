@@ -1,14 +1,15 @@
-import { test, expect } from '@playwright/test';
+import { test, expect } from '../../fixtures/app.fixture';
 
-test('has header', async ({ page }) => {
-  await page.goto('/');
+test('has header', async ({ page, mainApp }) => {
+  await mainApp.navigationBar.openMainPage();
 
   const header = page.getByTestId('homePageHeader');
   await expect(header).toBeVisible();
 });
 
-test('Check card list items', async ({ page }) => {
-  await page.goto('/');
+test('Check card list items', async ({ page, mainApp }) => {
+  await mainApp.navigationBar.openMainPage();
+
   const firstCard = page.getByTestId('catCard_0');
   const cardListItems = page.getByTestId(/catCard_/);
 

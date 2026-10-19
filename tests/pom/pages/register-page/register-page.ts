@@ -25,6 +25,10 @@ export class RegisterPage {
     return this.page.getByTestId('signInBtn');
   }
 
+  async openRegisterPage() {
+    await this.registerBtn.click();
+  }
+
   async register(name: string, email: string, password: string) {
     await this.nameInput.fill(name);
     await this.emailInput.fill(email);

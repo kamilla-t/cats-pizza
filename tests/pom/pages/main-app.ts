@@ -9,6 +9,7 @@ import { CartPage } from './cart-page/cart-page';
 import { DeliveryModal } from './shared/delivery-modal';
 import { OrderConfirmedModal } from './shared/order-confirmed-modal';
 import { MyOrdersPage } from './my-orders-page/my-orders-page';
+import { CleanupApi } from '../API/cleanupApi';
 
 export class MainApp {
   readonly page: Page;
@@ -45,5 +46,8 @@ export class MainApp {
   }
   public get myOrdersPage(): MyOrdersPage {
     return new MyOrdersPage(this.page);
+  }
+  public get cleanupApi(): CleanupApi {
+    return new CleanupApi(this.page.request, 'http://localhost:3001/api');
   }
 }
