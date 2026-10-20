@@ -12,6 +12,9 @@ export class HomePage {
   get addToCartBtn(): Locator {
     return this.page.getByTestId('addToCartBtn');
   }
+  get homePageHeader(): Locator {
+    return this.page.getByTestId('homePageHeader');
+  }
 
   async addFirstCatToCard() {
     await this.addToCartBtn.first().click();
@@ -20,10 +23,30 @@ export class HomePage {
     await expect(this.mainApp.navigationBar.cartTab).toBeVisible();
   }
 
-  async goToCheckoutFromCart() {
-    await this.mainApp.navigationBar.cartTab.click();
+  async goToCartPage() {
     await this.mainApp.cartDrawer.makeOrderBtn.click();
-    await expect(this.page).toHaveURL('/cart');
+  }
+
+  async goToCheckoutFromCart() {
+    await this.mainApp.navigationBar.openCartPage();
+    await this.goToCartPage();
+    await this.assertCardPageOpened();
     await this.mainApp.cartPage.makeOrderButton.click();
+  }
+  async assertLoaded() {
+    await expect(this.page).toHaveURL('/');
+    await expect(this.homePageHeader).toBeVisible();
+  }
+  async assertCardsVisible() {
+    const cards = this.page.getByTestId(/catCard_/);
+    await expect(cards.first()).toBeVisible();
+    await expect(cards).toHaveCount(9);
+  }
+  async assertCartBadgeCount(count: number) {
+    await expect(this.mainApp.navigationBar.cartTab).toContainText(`(${count})`);
+  }
+  async assertCardPageOpened() {
+    await expect(this.page).toHaveURL(/\/cart$/);
+    await expect(this.page.getByRole('heading', { name: 'Корзина' })).toBeVisible();
   }
 }
