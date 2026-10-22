@@ -43,6 +43,7 @@ export function CartPage() {
                     <div className="cart-item__qty">
                       <button
                         type="button"
+                        data-testid="minusBtn"
                         onClick={() =>
                           changeQuantity(item.id, item.quantity > 1 ? item.quantity - 1 : 1)
                         }>
@@ -50,6 +51,7 @@ export function CartPage() {
                       </button>
                       <input
                         type="number"
+                        data-testid="itemCounter"
                         min={1}
                         value={item.quantity}
                         onChange={(e) =>
@@ -58,6 +60,7 @@ export function CartPage() {
                       />
                       <button
                         type="button"
+                        data-testid="plusBtn"
                         onClick={() => changeQuantity(item.id, item.quantity + 1)}>
                         +
                       </button>
@@ -66,6 +69,7 @@ export function CartPage() {
                   <button
                     type="button"
                     className="cart-item__remove"
+                    data-testid="removeBtn"
                     onClick={() => removeItem(item.id)}>
                     Удалить
                   </button>
@@ -89,7 +93,7 @@ export function CartPage() {
             </div>
 
             <div className="cart-summary__actions">
-              <button type="button" className="cart-summary__clear" onClick={clearCart}>
+              <button type="button" data-testid="clearCartBtn" className="cart-summary__clear" onClick={clearCart}>
                 Очистить корзину
               </button>
               <button

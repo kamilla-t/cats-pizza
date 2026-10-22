@@ -1,4 +1,4 @@
-import { Locator, Page } from '@playwright/test';
+import { expect, Locator, Page } from '@playwright/test';
 
 export class DeliveryModal {
   readonly page: Page;
@@ -44,5 +44,11 @@ export class DeliveryModal {
     await this.apartmentField.fill(address.apartment);
     await this.commentField.fill(address.comment);
     await this.confirmOrderButton.click();
+  }
+  async fillWithoutAddress() {
+    await this.confirmOrderButton.click();
+  }
+  async assertValidationError(message: string) {
+    await expect(this.page.getByText(message)).toBeVisible();
   }
 }

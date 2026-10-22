@@ -23,13 +23,8 @@ export class HomePage {
     await expect(this.mainApp.navigationBar.cartTab).toBeVisible();
   }
 
-  async goToCartPage() {
-    await this.mainApp.cartDrawer.makeOrderBtn.click();
-  }
-
   async goToCheckoutFromCart() {
     await this.mainApp.navigationBar.openCartPage();
-    await this.goToCartPage();
     await this.assertCardPageOpened();
     await this.mainApp.cartPage.makeOrderButton.click();
   }
