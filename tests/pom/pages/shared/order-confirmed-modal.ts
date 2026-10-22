@@ -16,4 +16,7 @@ export class OrderConfirmedModal {
     await expect(this.modalTitle).toHaveText('Заказ оформлен');
     await this.closeBtn.click();
   }
+  async assertCheckoutOpened() {
+    await expect(this.modalTitle).toBeVisible();
+  }
 }

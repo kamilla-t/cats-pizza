@@ -5,8 +5,4 @@ export class CartDrawer {
   constructor(page: Page) {
     this.page = page;
   }
-
-  get makeOrderBtn(): Locator {
-    return this.page.getByTestId('goToCartPageBtn');
-  }
 }

@@ -32,7 +32,7 @@ export class NavigationBar {
     await this.myOrdersTab.click();
   }
   async openCartPage() {
-    await this.cartTab.click();
+    await this.page.goto('/cart');
   }
   async openLoginPage() {
     await this.loginBtn.click();

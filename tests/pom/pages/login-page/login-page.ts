@@ -26,4 +26,7 @@ export class LoginPage {
   async assertSignedIn() {
     await expect(this.mainApp.navigationBar.logOutBtn).toBeVisible();
   }
+  async assertErrorMessage(message: string) {
+    await expect(this.page.getByText(message)).toBeVisible();
+  }
 }

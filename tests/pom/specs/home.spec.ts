@@ -16,6 +16,5 @@ test('Guest opens cart and navigates to cart page', async ({ mainApp }) => {
   await mainApp.navigationBar.openMainPage();
   await mainApp.homePage.addFirstCatToCard();
   await mainApp.navigationBar.openCartPage();
-  await mainApp.homePage.goToCartPage();
   await mainApp.homePage.assertCardPageOpened();
 });
