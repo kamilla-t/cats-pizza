@@ -10,6 +10,10 @@ import { DeliveryModal } from './shared/delivery-modal';
 import { OrderConfirmedModal } from './shared/order-confirmed-modal';
 import { MyOrdersPage } from './my-orders-page/my-orders-page';
 import { CleanupApi } from '../API/cleanupApi';
+import { CartApi } from '../API/mockApi/CartApi';
+import { CatsApi } from '../API/mockApi/catsApi';
+import { OrdersApi } from '../API/mockApi/ordersApi';
+import { AuthApi } from '../API/mockApi/AuthApi';
 
 export class MainApp {
   readonly page: Page;
@@ -49,5 +53,17 @@ export class MainApp {
   }
   public get cleanupApi(): CleanupApi {
     return new CleanupApi(this.page.request, 'http://localhost:3001/api');
+  }
+  public get cartApi(): CartApi {
+    return new CartApi(this.page);
+  }
+  public get catsApi(): CatsApi {
+    return new CatsApi(this.page);
+  }
+  public get ordersApi(): OrdersApi {
+    return new OrdersApi(this.page);
+  }
+  public get authApi(): AuthApi {
+    return new AuthApi(this.page);
   }
 }

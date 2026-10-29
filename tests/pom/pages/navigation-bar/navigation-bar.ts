@@ -34,6 +34,9 @@ export class NavigationBar {
   async openCartPage() {
     await this.page.goto('/cart');
   }
+  async openCartDrawer() {
+    await this.cartTab.click();
+  }
   async openLoginPage() {
     await this.loginBtn.click();
   }

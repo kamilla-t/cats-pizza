@@ -17,7 +17,7 @@ export class HomePage {
   }
 
   async addFirstCatToCard() {
-    await this.addToCartBtn.first().click();
+    await this.mainApp.orderModal.openOrderModal();
     await this.mainApp.orderModal.addToCart.click();
     await expect(this.mainApp.navigationBar.cartTab).toContainText('(1)');
     await expect(this.mainApp.navigationBar.cartTab).toBeVisible();
@@ -43,5 +43,16 @@ export class HomePage {
   async assertCardPageOpened() {
     await expect(this.page).toHaveURL(/\/cart$/);
     await expect(this.page.getByRole('heading', { name: 'Корзина' })).toBeVisible();
+  }
+  async setupApiEmptyCart() {
+    await this.mainApp.cartApi.setEmptyCart();
+    await this.mainApp.catsApi.setCatsItems();
+  }
+  async setupApiCartWithItem() {
+    await this.mainApp.cartApi.setCartWithOneItem();
+    await this.mainApp.catsApi.setCatsItems();
+  }
+  async assertCorrectPageView() {
+    await expect(this.page).toHaveScreenshot('homePageWithItems.png');
   }
 }
