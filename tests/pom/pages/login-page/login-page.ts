@@ -18,6 +18,9 @@ export class LoginPage {
   get loginBtn(): Locator {
     return this.page.getByTestId('signInBtn');
   }
+  get loginModal(): Locator {
+    return this.page.getByTestId('modal');
+  }
   async login(email: string, password: string) {
     await this.emailInput.fill(email);
     await this.passwordInput.fill(password);
@@ -28,5 +31,8 @@ export class LoginPage {
   }
   async assertErrorMessage(message: string) {
     await expect(this.page.getByText(message)).toBeVisible();
+  }
+  async assertLoginPageCorrectView() {
+    await expect(this.loginModal).toHaveScreenshot('loginPage.png');
   }
 }
