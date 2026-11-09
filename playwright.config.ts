@@ -14,6 +14,8 @@ import process from 'process';
  */
 export default defineConfig({
   testDir: './tests',
+  // Single template for all assertions
+  snapshotPathTemplate: '{testDir}/__screenshots__/{testFilePath}/{arg}{ext}',
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
@@ -38,6 +40,12 @@ export default defineConfig({
     {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
+      testIgnore: /.*visualTest\/.*\.spec\.ts/,
+    },
+    {
+      name: 'chromium-visual',
+      use: { ...devices['Desktop Chrome'] },
+      testMatch: /.*visualTest\/.*\.spec\.ts/,
     },
 
     // {

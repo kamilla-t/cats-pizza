@@ -161,6 +161,106 @@
       "token": "token-48aa2ad1-b3fc-4a84-af3d-2addfb33d6f3",
       "userId": "user-2",
       "createdAt": "2026-10-19T01:35:51.560Z"
+    },
+    {
+      "token": "token-8b40b791-ab22-43cf-b405-06f8f99d4295",
+      "userId": "user-1",
+      "createdAt": "2026-11-08T22:31:31.264Z"
+    },
+    {
+      "token": "token-92a4dab1-fe2f-4a37-9d1c-ff41e0e5d797",
+      "userId": "user-1",
+      "createdAt": "2026-11-08T22:31:32.344Z"
+    },
+    {
+      "token": "token-dd60d590-a929-4cd4-8ce0-8eeffd923b6d",
+      "userId": "user-1",
+      "createdAt": "2026-11-08T22:31:34.960Z"
+    },
+    {
+      "token": "token-9df04960-67eb-4a17-8e20-5b12fcf4e7c1",
+      "userId": "user-1",
+      "createdAt": "2026-11-08T22:31:36.557Z"
+    },
+    {
+      "token": "token-8b2a98ac-5e63-4a69-b4fe-8148443eeeb2",
+      "userId": "user-1",
+      "createdAt": "2026-11-09T01:14:05.194Z"
+    },
+    {
+      "token": "token-50946616-9fef-4566-87d4-70e22f909087",
+      "userId": "user-1",
+      "createdAt": "2026-11-09T01:14:05.893Z"
+    },
+    {
+      "token": "token-93162eee-a1ce-43da-ba48-18fc5ef2ac1a",
+      "userId": "user-1",
+      "createdAt": "2026-11-09T01:14:06.426Z"
+    },
+    {
+      "token": "token-1f17ab5f-0abe-4822-884f-ffc890090e81",
+      "userId": "user-1",
+      "createdAt": "2026-11-09T01:14:07.033Z"
+    },
+    {
+      "token": "token-19e593e0-e1e0-473c-9c02-eae6981060db",
+      "userId": "user-1",
+      "createdAt": "2026-11-09T01:17:25.363Z"
+    },
+    {
+      "token": "token-35c01e67-7f79-48ba-9ce5-b240e8c81b8d",
+      "userId": "user-1",
+      "createdAt": "2026-11-09T01:17:26.824Z"
+    },
+    {
+      "token": "token-91c39a33-46a1-4a00-b1e6-da0b0c7885c5",
+      "userId": "user-1",
+      "createdAt": "2026-11-09T01:17:27.723Z"
+    },
+    {
+      "token": "token-80607c08-0bde-4bdf-ba1d-942a293a4a43",
+      "userId": "user-1",
+      "createdAt": "2026-11-09T01:17:29.507Z"
+    },
+    {
+      "token": "token-2434f3db-a508-4a7e-ab3d-5028f519e3b4",
+      "userId": "user-1",
+      "createdAt": "2026-11-09T01:20:53.994Z"
+    },
+    {
+      "token": "token-a4a5e393-20a8-4caf-9f13-5ac810df29c0",
+      "userId": "user-1",
+      "createdAt": "2026-11-09T01:20:54.976Z"
+    },
+    {
+      "token": "token-bde3ab1c-45ec-4786-877b-fdb680d0ce4a",
+      "userId": "user-1",
+      "createdAt": "2026-11-09T01:20:56.945Z"
+    },
+    {
+      "token": "token-d1b2f037-7d4e-43ce-bb7f-cb3344d6d2fe",
+      "userId": "user-1",
+      "createdAt": "2026-11-09T01:20:59.049Z"
+    },
+    {
+      "token": "token-6828619f-02c9-40a1-8d77-9aad8261afdf",
+      "userId": "user-1",
+      "createdAt": "2026-11-09T01:21:36.061Z"
+    },
+    {
+      "token": "token-04a81f05-599a-4fbd-a403-1162587f4de5",
+      "userId": "user-1",
+      "createdAt": "2026-11-09T01:21:37.642Z"
+    },
+    {
+      "token": "token-411d0911-e46e-490e-bf4a-708a385b065d",
+      "userId": "user-1",
+      "createdAt": "2026-11-09T01:21:39.459Z"
+    },
+    {
+      "token": "token-67e17a4d-b0b4-44ff-a61d-ddfd8c4c4363",
+      "userId": "user-1",
+      "createdAt": "2026-11-09T01:21:40.959Z"
     }
   ],
   "carts": [
@@ -202,6 +302,376 @@
     {
       "ownerType": "user",
       "ownerId": "user-2",
+      "items": []
+    },
+    {
+      "ownerType": "guest",
+      "ownerId": "guest-70b5437b-51f2-45cc-8c96-c87ab789819f",
+      "items": []
+    },
+    {
+      "ownerType": "guest",
+      "ownerId": "guest-684ab700-3732-4f9f-85d7-711b87d40204",
+      "items": []
+    },
+    {
+      "ownerType": "guest",
+      "ownerId": "guest-a5a894cf-d78b-4f41-8257-fdebc5f55153",
+      "items": [
+        {
+          "id": "cat-1",
+          "name": "Маргарита",
+          "basePrice": 3500,
+          "price": 3500,
+          "options": {
+            "furType": "Средняя",
+            "activityLevel": "Игровой",
+            "extras": []
+          },
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "ownerType": "guest",
+      "ownerId": "guest-d4111c61-0d27-4ca3-a4cd-21f19e85908a",
+      "items": []
+    },
+    {
+      "ownerType": "guest",
+      "ownerId": "guest-090f5e20-aa5c-4c22-8ee6-59f980208e5d",
+      "items": [
+        {
+          "id": "cat-1",
+          "name": "Маргарита",
+          "basePrice": 3500,
+          "price": 3500,
+          "options": {
+            "furType": "Средняя",
+            "activityLevel": "Игровой",
+            "extras": []
+          },
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "ownerType": "guest",
+      "ownerId": "guest-587ab606-a514-41d4-9170-28db256e78da",
+      "items": [
+        {
+          "id": "cat-1",
+          "name": "Маргарита",
+          "basePrice": 3500,
+          "price": 3500,
+          "options": {
+            "furType": "Средняя",
+            "activityLevel": "Игровой",
+            "extras": []
+          },
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "ownerType": "guest",
+      "ownerId": "guest-8dc73662-c985-4173-b162-e8c323ac270c",
+      "items": []
+    },
+    {
+      "ownerType": "guest",
+      "ownerId": "guest-9e6a6ff1-01f1-4a8e-9e30-3364508a45e2",
+      "items": []
+    },
+    {
+      "ownerType": "guest",
+      "ownerId": "guest-50619ffe-308e-46b2-b11f-4b40421a761c",
+      "items": [
+        {
+          "id": "cat-1",
+          "name": "Маргарита",
+          "basePrice": 3500,
+          "price": 3500,
+          "options": {
+            "furType": "Средняя",
+            "activityLevel": "Игровой",
+            "extras": []
+          },
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "ownerType": "guest",
+      "ownerId": "guest-dd8a1563-fbef-4173-b9dd-05441a06f9b4",
+      "items": []
+    },
+    {
+      "ownerType": "guest",
+      "ownerId": "guest-dc8293b3-7536-4b63-9a3f-ec8e83c5685f",
+      "items": []
+    },
+    {
+      "ownerType": "guest",
+      "ownerId": "guest-6561022d-c57c-40fd-a38b-d3d18ca6526f",
+      "items": [
+        {
+          "id": "cat-1",
+          "name": "Маргарита",
+          "basePrice": 3500,
+          "price": 3500,
+          "options": {
+            "furType": "Средняя",
+            "activityLevel": "Игровой",
+            "extras": []
+          },
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "ownerType": "guest",
+      "ownerId": "guest-f5210545-37bd-47cf-91d0-37529a079e99",
+      "items": [
+        {
+          "id": "cat-1",
+          "name": "Маргарита",
+          "basePrice": 3500,
+          "price": 3500,
+          "options": {
+            "furType": "Средняя",
+            "activityLevel": "Игровой",
+            "extras": []
+          },
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "ownerType": "guest",
+      "ownerId": "guest-7e5daaaf-4b2a-4fbf-903f-e1eb44d7d0d6",
+      "items": []
+    },
+    {
+      "ownerType": "guest",
+      "ownerId": "guest-f9736614-3d22-493e-94d3-a6049832a4ce",
+      "items": []
+    },
+    {
+      "ownerType": "guest",
+      "ownerId": "guest-82c87548-7284-4c66-b721-f87c521c8ed7",
+      "items": [
+        {
+          "id": "cat-1",
+          "name": "Маргарита",
+          "basePrice": 3500,
+          "price": 3500,
+          "options": {
+            "furType": "Средняя",
+            "activityLevel": "Игровой",
+            "extras": []
+          },
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "ownerType": "guest",
+      "ownerId": "guest-5123e2d7-46ca-4a75-b15a-f2ca79076c35",
+      "items": []
+    },
+    {
+      "ownerType": "guest",
+      "ownerId": "guest-225d1aa7-dff7-42d6-b739-e92c30aa2d59",
+      "items": []
+    },
+    {
+      "ownerType": "guest",
+      "ownerId": "guest-d837016c-444a-490a-95e2-7606d21230fb",
+      "items": [
+        {
+          "id": "cat-1",
+          "name": "Маргарита",
+          "basePrice": 3500,
+          "price": 3500,
+          "options": {
+            "furType": "Средняя",
+            "activityLevel": "Игровой",
+            "extras": []
+          },
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "ownerType": "guest",
+      "ownerId": "guest-63e13ff2-4d06-4e05-bf43-98aadaede1fe",
+      "items": [
+        {
+          "id": "cat-1",
+          "name": "Маргарита",
+          "basePrice": 3500,
+          "price": 3500,
+          "options": {
+            "furType": "Средняя",
+            "activityLevel": "Игровой",
+            "extras": []
+          },
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "ownerType": "guest",
+      "ownerId": "guest-513d7a5f-ac3f-4a5f-9998-aed2cc54d3f7",
+      "items": []
+    },
+    {
+      "ownerType": "guest",
+      "ownerId": "guest-b5bf0a61-a398-4812-ba36-c8659bfc7002",
+      "items": []
+    },
+    {
+      "ownerType": "guest",
+      "ownerId": "guest-c30b31ac-1e3e-4ac4-a4ea-7c521cf9f9ed",
+      "items": [
+        {
+          "id": "cat-1",
+          "name": "Маргарита",
+          "basePrice": 3500,
+          "price": 3500,
+          "options": {
+            "furType": "Средняя",
+            "activityLevel": "Игровой",
+            "extras": []
+          },
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "ownerType": "guest",
+      "ownerId": "guest-a8fedd49-aa2e-4b2b-a80f-7faece4c4c6e",
+      "items": []
+    },
+    {
+      "ownerType": "guest",
+      "ownerId": "guest-02fdc3d4-008a-4d7f-b40d-e72f41de1ce4",
+      "items": []
+    },
+    {
+      "ownerType": "guest",
+      "ownerId": "guest-5a7678f6-0c47-4caf-856f-989215dfd0ae",
+      "items": [
+        {
+          "id": "cat-1",
+          "name": "Маргарита",
+          "basePrice": 3500,
+          "price": 3500,
+          "options": {
+            "furType": "Средняя",
+            "activityLevel": "Игровой",
+            "extras": []
+          },
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "ownerType": "guest",
+      "ownerId": "guest-c564391c-e151-4274-bba7-c7a1ab858e97",
+      "items": [
+        {
+          "id": "cat-1",
+          "name": "Маргарита",
+          "basePrice": 3500,
+          "price": 3500,
+          "options": {
+            "furType": "Средняя",
+            "activityLevel": "Игровой",
+            "extras": []
+          },
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "ownerType": "guest",
+      "ownerId": "guest-1d8c50e4-0c04-4ae0-b8be-01784d500d56",
+      "items": []
+    },
+    {
+      "ownerType": "guest",
+      "ownerId": "guest-349aaa6e-1cb2-4993-b2bb-2dc0643065cd",
+      "items": []
+    },
+    {
+      "ownerType": "guest",
+      "ownerId": "guest-612bd610-fff1-49ef-879a-4ae087974a13",
+      "items": []
+    },
+    {
+      "ownerType": "guest",
+      "ownerId": "guest-2afef137-9ca4-464b-b4b0-2d6008ac6651",
+      "items": [
+        {
+          "id": "cat-1",
+          "name": "Маргарита",
+          "basePrice": 3500,
+          "price": 3500,
+          "options": {
+            "furType": "Средняя",
+            "activityLevel": "Игровой",
+            "extras": []
+          },
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "ownerType": "guest",
+      "ownerId": "guest-5fdc32a2-959f-498a-ba5c-666685bac1b1",
+      "items": []
+    },
+    {
+      "ownerType": "guest",
+      "ownerId": "guest-2dd701fc-875b-4eef-915e-859eed77c1ea",
+      "items": [
+        {
+          "id": "cat-1",
+          "name": "Маргарита",
+          "basePrice": 3500,
+          "price": 3500,
+          "options": {
+            "furType": "Средняя",
+            "activityLevel": "Игровой",
+            "extras": []
+          },
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "ownerType": "guest",
+      "ownerId": "guest-d4f55416-8487-44ce-94b1-68470a52320e",
+      "items": [
+        {
+          "id": "cat-1",
+          "name": "Маргарита",
+          "basePrice": 3500,
+          "price": 3500,
+          "options": {
+            "furType": "Средняя",
+            "activityLevel": "Игровой",
+            "extras": []
+          },
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "ownerType": "guest",
+      "ownerId": "guest-16386d7f-9758-431b-98c0-15775aff9927",
       "items": []
     }
   ]
