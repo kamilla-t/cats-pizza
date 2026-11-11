@@ -11,8 +11,8 @@ import { OrderConfirmedModal } from './shared/order-confirmed-modal';
 import { MyOrdersPage } from './my-orders-page/my-orders-page';
 import { CleanupApi } from '../API/cleanupApi';
 import { CartApi } from '../API/mockApi/CartApi';
-import { CatsApi } from '../API/mockApi/catsApi';
-import { OrdersApi } from '../API/mockApi/ordersApi';
+import { CatsApi } from '../API/mockApi/CatsApi';
+import { OrdersApi } from '../API/mockApi/OrdersApi';
 import { AuthApi } from '../API/mockApi/AuthApi';
 
 export class MainApp {
